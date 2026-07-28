@@ -2,47 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=\, initial-scale=1.0">
-  <title>httpcastor.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Anthony Castor | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head> 
 <body>
-  <h1> My Portfolio</h1>
-  <hr>
-  <h2>About Me</h2>
-    <p>I am Mark Anthony Castor <br> Residing at Aparri, Cagayan, Philippines. <br> I am a self-taught front end programmer with knowledge on Html, Css, C, C++, and Java. <!-- add JS soon--> <br> i work on projects specifically web development <br> I'm also currently studying Bachelor of Science in Computer Engineering at Cagayan State University. <br>Lately i've been diving deeeper more on web development specificallyin Java Script and React Js.</p>
-    <hr>
-  <h2>Experience</h2>
-  <ol>
-    <li>Developed my first paid project <br> RD Educational Consultancy Services(2025) </li>
-    <li>Developed my Portfolio <br> <a href="index.html">httpcastor.com</a> (2025)</li>
-    <li>BS Computer Engineering <br> Cagayan State University (2023)- Present</li>
-    <li>Hello World  <br> Wrote my first line of code (2020)</li>
-  </ol>
-  <hr>
-  <h3>Tech Stack</h3>
-  <ol>
-    <li>Front End</li>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
-    <li>Back End</li>
-    <ul>
-      <li>C</li>
-      <li>C++</li>
-      <li>Java</li>
-    </ul>
-  </ol>
-    <hr>
-<!--Create More Projects-->
-    <h3>Recent Projects  </h3>
-    <li> RD Educational Consultancy Services</li>
-    <li> Portfolio</li>
-<!--Attend Seminars-->
-    <hr>
-  <h3>Recent Certifications</h3>
-    <ol>
-      <li>Basta cert</li>
-    </ol>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">&lt;httpcastor/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <span class="badge">Computer Engineering Student & Web Developer</span>
+        <h1>Hi, I'm <span class="highlight">Mark Anthony Castor</span></h1>
+        <p class="subtitle">Self-taught Front-End Developer based in Aparri, Cagayan, Philippines. Currently diving deep into JavaScript & React JS.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
+      <div class="about-card">
+        <p>
+          I am <strong>Mark Anthony Castor</strong>, residing at Aparri, Cagayan, Philippines. 
+          I am a passionate, self-taught front-end developer with foundational knowledge in HTML, CSS, C, C++, and Java.
+        </p>
+        <p>
+          I am currently pursuing my <strong>Bachelor of Science in Computer Engineering</strong> at 
+          <strong>Cagayan State University</strong>. Lately, I've been expanding my web development skills with a strong focus on <strong>JavaScript</strong> and <strong>React.js</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section" id="experience">
+      <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="date">2025</span>
+            <h3>First Paid Client Project</h3>
+            <p>Developed website for <strong>RD Educational Consultancy Services</strong>.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="date">2025</span>
+            <h3>Portfolio Website</h3>
+            <p>Designed and launched personal portfolio (<a href="http://httpcastor.com" target="_blank">httpcastor.com</a>).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="date">2023 - Present</span>
+            <h3>BS Computer Engineering</h3>
+            <p>Student at <strong>Cagayan State University</strong>.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="date">2020</span>
+            <h3>First Line of Code</h3>
+            <p>Wrote my first "Hello World" program and started my programming journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section" id="skills">
+      <h2 class="section-title"><i class="fa-solid fa-code"></i> Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-desktop"></i> Front End</h3>
+          <div class="tags">
+            <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="tag learning"><i class="fa-brands fa-js"></i> JavaScript (Learning)</span>
+            <span class="tag learning"><i class="fa-brands fa-react"></i> React JS (Learning)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-server"></i> Core & Back End Languages</h3>
+          <div class="tags">
+            <span class="tag"><i class="fa-solid fa-code"></i> C</span>
+            <span class="tag"><i class="fa-solid fa-code"></i> C++</span>
+            <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section class="section" id="projects">
+      <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Recent Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-folder-open project-icon"></i>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="External Link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>RD Educational Consultancy Services</h3>
+          <p>A web development project built for client consultancy services.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Web Dev</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-folder-open project-icon"></i>
+            <div class="project-links">
+              <a href="http://httpcastor.com" class="icon-link" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Personal Portfolio</h3>
+          <p>My personal developer space displaying projects, experience, and skills.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Recent Certifications -->
+    <section class="section" id="certifications">
+      <h2 class="section-title"><i class="fa-solid fa-certificate"></i> Certifications & Seminars</h2>
+      <ul class="cert-list">
+        <li>
+          <i class="fa-solid fa-award"></i>
+          <div>
+            <h4>General Certification Placeholder</h4>
+            <p>Cagayan State University / Online Learning Platform</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <h2 class="section-title"><i class="fa-solid fa-envelope"></i> Get In Touch</h2>
+      <div class="contact-box">
+        <p>Interested in working together or checking out my work?</p>
+        <a href="mailto:your.email@example.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send an Email</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mark Anthony Castor. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
